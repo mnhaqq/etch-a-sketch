@@ -1,0 +1,18 @@
+body {
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+}
+
+h2 {
+    margin: 10px 20px;
+    margin-left: 200px;
+}
+
+.container {
+    border: solid black;
+    display: flex;
+    flex-wrap: wrap;
+    width: 544px;
+    padding: 0;
+    margin: 20px;
+}
