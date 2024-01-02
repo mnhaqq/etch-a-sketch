@@ -12,7 +12,8 @@ h2 {
     border: solid black;
     display: flex;
     flex-wrap: wrap;
-    width: 544px;
+    width: 512px;
+    height: 512px;
     padding: 0;
     margin: 20px;
 }
