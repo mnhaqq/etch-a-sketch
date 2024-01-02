@@ -24,7 +24,8 @@ function createGrid(size) {
 
     gridSquares.forEach(gridSquare => {
         gridSquare.addEventListener('mouseover', () => {
-            gridSquare.style.backgroundColor = 'black';
+            let [r, g, b] = generateRandomColor();
+            gridSquare.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
         });
     });
 }
@@ -47,4 +48,11 @@ function resizeGrid() {
     while (container.firstChild) container.removeChild(container.firstChild);
 
     createGrid(newSize);
+}
+
+function generateRandomColor() {
+    let r = Math.floor(Math.random() * 256);
+    let g = Math.floor(Math.random() * 256);
+    let b = Math.floor(Math.random() * 256);
+    return [r, g, b];
 }
